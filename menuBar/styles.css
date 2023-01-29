@@ -1,0 +1,109 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(14, 14, 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar {
+    height: 100px;
+    width: 600px;
+    background-color: #464646;
+    border-radius: 50px;
+    border: 2px solid grey;
+    background: linear-gradient(150deg, #464646 0%, rgb(122, 122, 122) 50%, #525252 100%);
+    animation: gradient 5s infinite linear;
+    background-size: 300%; 
+}
+
+.wrapper {
+    display: flex;
+    margin-top: 18px; /*Переделать в нормальный код(а может не надо*/
+    margin-left: 50px;
+    font-size: 50px;
+}
+
+.homeBar {
+    height: 60px;
+    width: 60px;
+    margin-right: 50px;
+}
+.personalAccount {
+    height: 60px;
+    width: 60px;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+.messenger {
+    height: 60px;
+    width: 60px;
+    margin-right: 65px;
+}
+.photo {
+    height: 60px;
+    width: 60px;
+    margin-right: 60px;
+}
+.settings {
+    height: 60px;
+    width: 60px;
+    margin-right: 50px;
+}
+
+/*Можно переделать opacity в более короткий код. Поработать с оболочкой*/
+
+.homeBar:hover {
+    opacity: 0.6;
+    color: #1a6439;
+}
+
+.personalAccount:hover {
+    opacity: 0.6;
+    color: #1a6439;
+}
+
+.messenger:hover {
+    opacity: 0.6;
+    color: #1a6439;
+}
+
+.photo:hover {
+    opacity: 0.6;
+    color: #1a6439;
+}
+
+.settings:hover {
+    opacity: 0.6;
+    color: #1a6439;
+}
+
+@keyframes barAnimation {
+    0% {
+        background-color: #464646;
+    }
+    50% {
+        background-color: rgb(124, 124, 124);
+    }
+    100% {
+        background-color: #464646;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 80% 50%;
+    }
+    50% {
+        background-position: 0% 10%;
+    }
+    100% {
+        background-position: 80% 0%;
+    }
+}
